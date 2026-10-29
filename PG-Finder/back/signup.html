@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up - StayNearby</title>
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">StayNearby</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Find a PG</a></li>
+            <li><a href="../compare.html">Compare</a></li>
+            <li><a href="../upload.html">List your PG</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+        <a href="../login.html" class="signin-btn">Sign in</a>
+    </nav>
+
+    <main class="login-area">
+        <form class="login-form" action="../login.html">
+            <h1>Create your account</h1>
+
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required
+                   pattern="[A-Za-z0-9._%+\-]+@gmail\.com"
+                   title="Email must end with @gmail.com">
+
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" required
+                   pattern="[0-9]{10}"
+                   title="Enter a 10-digit phone number">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required
+                   pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}"
+                   title="Needs uppercase, lowercase, a number, a special character, and 8+ characters">
+
+            <label for="confirm">Confirm password</label>
+            <input type="password" id="confirm" name="confirm" required>
+
+            <h3>I am a</h3>
+            <label class="check"><input type="radio" name="role" value="student" required> Student looking for a PG</label>
+            <label class="check"><input type="radio" name="role" value="owner"> PG owner</label>
+
+            <button type="submit">Create account</button>
+
+            <p class="switch-text">Already have an account? <a href="../login.html">Login</a></p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-about">
+            <h3>StayNearby</h3>
+            <p>Helping students find affordable PGs near their college.</p>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact us</h3>
+            <p>Email: <a href="mailto:support@staynearby.com">support@staynearby.com</a></p>
+            <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+            <p>Address: Ahmedabad, Gujarat</p>
+        </div>
+
+        <p class="footer-links">
+            <a href="reviews.html">Reviews</a>
+            <a href="nearby.html">Nearby</a>
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+        </p>
+        
+        <p class="footer-bottom">&copy; 2026 StayNearby | BCA Project</p>
+    </footer>
+
+    <a href="mailto:support@staynearby.com" class="support-btn">Help</a>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Reviews - StayNearby</title>
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">StayNearby</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Find a PG</a></li>
+            <li><a href="../compare.html">Compare</a></li>
+            <li><a href="../upload.html">List your PG</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+        <a href="../login.html" class="signin-btn">Sign in</a>
+    </nav>
+
+    <main class="reviews-area">
+
+        <h1>Student reviews</h1>
+        <p class="reviews-intro">Real experiences from students who stayed at PGs listed on StayNearby.</p>
+
+        <section class="rating-summary">
+            <p class="big-rating">4.5</p>
+            <div>
+                <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                <p>Average rating from 8 reviews</p>
+            </div>
+        </section>
+
+        <section class="reviews-list">
+
+            <article class="review-card">
+                <div class="review-head">
+                    <h3>Aarav Shah</h3>
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <p class="review-pg">Green Nest PG &middot; 12 Sep 2026</p>
+                <p>Very quiet place and the study table is a big plus. The owner is helpful and the campus is a short walk away.</p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-head">
+                    <h3>Rohan Mehta</h3>
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                </div>
+                <p class="review-pg">Blue Sky PG &middot; 28 Aug 2026</p>
+                <p>Food is good and comes on time. The room is bright and clean. WiFi is sometimes slow in the evening.</p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-head">
+                    <h3>Neha Patel</h3>
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <p class="review-pg">Mountain View PG &middot; 3 Oct 2026</p>
+                <p>Felt very safe with CCTV and a strict gate time. The meals are tasty and the rooms are well maintained.</p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-head">
+                    <h3>Kunal Verma</h3>
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                </div>
+                <p class="review-pg">Sunrise PG &middot; 19 Sep 2026</p>
+                <p>Closest to campus, so I save a lot of travel time. The AC works well. A bit crowded with three in a room.</p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-head">
+                    <h3>Simran Kaur</h3>
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                </div>
+                <p class="review-pg">Lotus Residency &middot; 7 Oct 2026</p>
+                <p>New and clean, and the owner responds quickly. Good value for the price. Would like a laundry facility.</p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-head">
+                    <h3>Devansh Joshi</h3>
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <p class="review-pg">Campus Corner PG &middot; 15 Sep 2026</p>
+                <p>The cheapest option near college and still comfortable. Shelves on the wall give extra storage space.</p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-head">
+                    <h3>Ishita Desai</h3>
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                </div>
+                <p class="review-pg">Mountain View PG &middot; 22 Aug 2026</p>
+                <p>Clean rooms and good laundry service. It is a bit far from campus, but the bus stop is nearby.</p>
+            </article>
+
+            <article class="review-card">
+                <div class="review-head">
+                    <h3>Yash Thakkar</h3>
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <p class="review-pg">Royal Stay PG &middot; 30 Sep 2026</p>
+                <p>Single room with AC and a TV. Expensive compared to others, but worth it if you want privacy.</p>
+            </article>
+
+        </section>
+
+        <form class="upload-form feedback-form" action="thanks.html">
+            <h2>Share your feedback</h2>
+
+            <label for="reviewer">Your name</label>
+            <input type="text" id="reviewer" name="reviewer" required>
+
+            <label for="review-pg">Which PG did you stay at?</label>
+            <select id="review-pg" name="pg" required>
+                <option value="">-- Select --</option>
+                <option>Green Nest PG</option>
+                <option>Blue Sky PG</option>
+                <option>Sunrise PG</option>
+                <option>Mountain View PG</option>
+                <option>Lotus Residency</option>
+                <option>Campus Corner PG</option>
+                <option>Royal Stay PG</option>
+            </select>
+
+            <h3>Your rating</h3>
+            <div class="rating-options">
+                <label class="check"><input type="radio" name="rating" value="5" required> 5 &#9733;</label>
+                <label class="check"><input type="radio" name="rating" value="4"> 4 &#9733;</label>
+                <label class="check"><input type="radio" name="rating" value="3"> 3 &#9733;</label>
+                <label class="check"><input type="radio" name="rating" value="2"> 2 &#9733;</label>
+                <label class="check"><input type="radio" name="rating" value="1"> 1 &#9733;</label>
+            </div>
+
+            <label for="review-text">Your review</label>
+            <textarea id="review-text" name="review" rows="4" required></textarea>
+
+            <button type="submit">Submit feedback</button>
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-about">
+            <h3>StayNearby</h3>
+            <p>Helping students find affordable PGs near their college.</p>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact us</h3>
+            <p>Email: <a href="mailto:support@staynearby.com">support@staynearby.com</a></p>
+            <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+            <p>Address: Ahmedabad, Gujarat</p>
+        </div>
+
+        <p class="footer-links">
+            <a href="reviews.html">Reviews</a>
+            <a href="nearby.html">Nearby</a>
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+        </p>
+        
+        <p class="footer-bottom">&copy; 2026 StayNearby | BCA Project</p>
+    </footer>
+
+    <a href="mailto:support@staynearby.com" class="support-btn">Help</a>
+
+</body>
+</html>
