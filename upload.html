@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List your PG - StayNearby</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">StayNearby</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Find a PG</a></li>
+            <li><a href="compare.html">Compare</a></li>
+            <li><a class="active" href="upload.html">List your PG</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <a href="login.html" class="signin-btn">Sign in</a>
+    </nav>
+
+    <main class="upload-area">
+        <form class="upload-form" action="listed.html">
+            <h1>List your PG</h1>
+
+            <label for="pg-name">PG name</label>
+            <input type="text" id="pg-name" name="pg-name" required>
+
+            <label for="pg-address">Address</label>
+            <input type="text" id="pg-address" name="pg-address" required>
+
+            <label for="pg-distance">Distance from college (km)</label>
+            <input type="number" id="pg-distance" name="pg-distance" min="0" step="0.1" required>
+
+            <label for="pg-price">Price per month (₹)</label>
+            <input type="number" id="pg-price" name="pg-price" min="0" required>
+
+            <label for="pg-room">Room type</label>
+            <select id="pg-room" name="room" required>
+                <option value="">-- Select --</option>
+                <option value="single">Single</option>
+                <option value="double">Double sharing</option>
+                <option value="triple">Triple sharing</option>
+            </select>
+
+            <h3>Suitable for</h3>
+            <label class="check"><input type="radio" name="gender" value="boys" required> Boys</label>
+            <label class="check"><input type="radio" name="gender" value="girls"> Girls</label>
+            <label class="check"><input type="radio" name="gender" value="both"> Boys &amp; Girls</label>
+
+            <h3>Services</h3>
+            <label class="check"><input type="checkbox" name="service" value="food"> Food included</label>
+            <label class="check"><input type="checkbox" name="service" value="wifi"> WiFi</label>
+            <label class="check"><input type="checkbox" name="service" value="ac"> AC</label>
+            <label class="check"><input type="checkbox" name="service" value="laundry"> Laundry</label>
+            <label class="check"><input type="checkbox" name="service" value="power"> Power backup</label>
+            <label class="check"><input type="checkbox" name="service" value="cctv"> CCTV</label>
+
+            <label for="pg-owner">Owner name</label>
+            <input type="text" id="pg-owner" name="pg-owner" required>
+
+            <label for="pg-phone">Owner phone</label>
+            <input type="tel" id="pg-phone" name="pg-phone" required pattern="[0-9]{10}" title="Enter a 10-digit phone number">
+
+            <label for="pg-photo">Photo</label>
+            <input type="file" id="pg-photo" accept="image/*">
+
+            <label for="pg-desc">Description</label>
+            <textarea id="pg-desc" rows="4"></textarea>
+
+            <button type="submit">List my PG</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-about">
+            <h3>StayNearby</h3>
+            <p>Helping students find affordable PGs near their college.</p>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact us</h3>
+            <p>Email: <a href="mailto:support@staynearby.com">support@staynearby.com</a></p>
+            <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+            <p>Address: Ahmedabad, Gujarat</p>
+        </div>
+
+        <p class="footer-links">
+            <a href="back/reviews.html">Reviews</a>
+            <a href="back/nearby.html">Nearby</a>
+            <a href="back/terms.html">Terms</a>
+            <a href="back/privacy.html">Privacy</a>
+        </p>
+        
+        <p class="footer-bottom">&copy; 2026 StayNearby | BCA Project</p>
+    </footer>
+
+    <a href="mailto:support@staynearby.com" class="support-btn">Help</a>
+
+</body>
+</html>
